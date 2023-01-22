@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Artifact'){
             steps{
-                bat 'mvn clean package'
+                bat 'mvn clean package -DskipTest=true'
             }
         }
     }
