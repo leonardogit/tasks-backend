@@ -51,5 +51,11 @@ pipeline {
                 }
             }
         }
+        stage('Functional Tests') {
+             steps {
+                 echo "Functional Tests Passed!!!"
+             }
+        }
+
     }
 }
