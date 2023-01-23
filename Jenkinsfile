@@ -56,6 +56,5 @@ pipeline {
                  echo "Functional Tests Passed!!!"
              }
         }
-
     }
 }
