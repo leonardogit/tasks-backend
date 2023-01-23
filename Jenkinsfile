@@ -36,8 +36,10 @@ pipeline {
         }
         stage('API Test'){
             steps{
+                dir('api-test') {
                 git 'https://github.com/leonardogit/tasks-api-test'
-                bat 'mvn test'
+                bat 'mvn test'// some block
+                }
             }
         }
     }
